@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #000000;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.479);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: #000000;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.479);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav li {
+    height: 50px;
+}
+
+/* 
+nav ul li{
+    margin-right: 50px;
+} */
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #1177d6;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #000000ad;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+#menusvg {
+    padding: 0.5px 10px;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #00000083;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    #imggg {
+        width: 2px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #00000083;
+    }
+}
+
+#imggg {
+    width: 60px;
+}
+
+.omr img {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: #00000083;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    /* Center the .textArea horizontally */
+    align-items: center;
+    /* Center the .textArea vertically */
+    background-color: #001f3f;
+    height: 80vh;
+    /* Adjust height as needed */
+}
+
+#about {
+    width: 100%;
+    /* Ensure the #about div takes full width */
+}
+
+.textArea {
+    text-align: center;
+    color: #fff;
+}
+
+.textArea #p1,
+#p2,
+#p3 {
+    padding: 30px 24px;
+    border-radius: 12px;
+    background-color: #00000063;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 800px) {
+    .textArea {
+        h1 {
+            font-size: 24px;
+        }
+
+        body {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .textArea {
+        margin-top: 100px;
+        height: -1000vh;
+    }
+}
+
+.socialMedia {
+    background-color: #000000e8;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.socialMediaIcons img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    width: 150px;
+    transition: all ease .6s;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .socialMediaIcons img {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -1pc;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.socialMediaIcons img:hover {
+    width: 160px;
+}
+
+#ml:hover {
+    transform: scale(1.1);
+}
+
+#yt:hover {
+    transform: scale(1.1);
+}
+
+#wa:hover {
+    transform: scale(1.1);
+}
+
+#ig {
+    transform: scale(1.1);
+}
