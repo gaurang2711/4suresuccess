@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll For Test Series</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../login/index.html">Login/Signup</a></li>
+                <li><a href="../announcements/index.html">Announcement</a></li>
+                <li><a href="../enroll/index.html">Enroll for Test Series</a></li>
+                <li><a href="../downloads/index.html">Downloads</a></li>
+                <li><a href="../test series/index.html">Test Series</a></li>
+            </ul>
+            <ul>
+                <li id="tld"><a href="index.html"><img src="../images/4sure-test-series-logo.png" id="imggg"
+                            alt=""><span style="color: #000;">ad</span>4Sure Academy</a></li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="../login/index.html">Login/Signup</a></li>
+                <li class="hideOnMobile"><a href="../announcements/index.html">Announcement</a></li>
+                <li class="hideOnMobile"><a href="../enroll/index.html">Enroll for Test Series</a></li>
+                <li class="hideOnMobile"><a href="../downloads/index.html">Downloads</a></li>
+                <li class="hideOnMobile"><a href="../test series/index.html">Test Series</a></li>
+                <li><a href="#" id="menusvg" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+<center>
+    <div class="daForm">
+        <form action="POST"><br>
+            <h2>Enroll for Test Series</h2><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="course">Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="CA">CA</option>
+                <option value="CS">CS</option>
+                <option value="Maharshtra 12th Standard">Maharshtra 12th Standard</option>
+                <option value="English Grammar">English Grammar</option></select><br><br>
+                <button type="submit">Enroll !</button>
+                <br><br>
+        </form>
+    </div>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>
