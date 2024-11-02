@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../images/notebook.avif");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+
+header {
+    background-color: #000000;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.479);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: #000000;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.479);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav li {
+    height: 50px;
+}
+
+/* 
+nav ul li{
+    margin-right: 50px;
+} */
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #1177d6;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #000000ad;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+#menusvg {
+    padding: 0.5px 10px;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #00000083;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    #imggg {
+        width: 2px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: #00000083;
+    }
+}
+#imggg {
+    width: 60px;
+}
+
+.loginForm h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.loginForm input[type="text"],.loginForm input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    font-size: 16px;
+}
+
+.loginForm input[type="text"],.loginForm input[type="password"]:hover{
+    background-color: #f3f3f3;
+    color: #0f0f0f;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+
+}
+
+.loginForm input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1177d6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loginForm input[type="submit"]:hover{
+    background-color: #002c50;
+}
+
+.loginForm .forgotPassword a{
+    color: #000;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.loginForm .forgotPassword a:hover{
+    font-size: 12px;
+    color: #1177d6;
+}
+.loginForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all ease 1s;
+}
+span{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.rememberMe{
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 15%;
+    height: 1px;
+    background-color: #00000083;
+}
+
+.daBtn{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+#loginButton, #signupButton{
+    margin-top: 20px;
+    margin-right: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1177d6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+#loginButton:hover, #signupButton:hover{
+    background-color: #002c50;
+    transition: background-color 0.3s ease-in-out;
+}
+.signUpForm h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.signUpForm input[type="text"],.signUpForm input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    font-size: 16px;
+}
+
+.signUpForm input[type="text"],.loginForm input[type="password"]:hover{
+    background-color: #f3f3f3;
+    color: #0f0f0f;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+
+}
+
+.signUpForm input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1177d6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signUpForm input[type="submit"]:hover{
+    background-color: #002c50;
+}
+
+.signUpForm .forgotPassword a{
+    color: #000;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.signUpForm .forgotPassword a:hover{
+    font-size: 12px;
+    color: #1177d6;
+}
+.signUpForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all ease 1s;
+}
+span{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.rememberMe{
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 15%;
+    height: 1px;
+    background-color: #00000083;
+}
